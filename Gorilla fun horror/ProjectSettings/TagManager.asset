@@ -6,6 +6,9 @@ TagManager:
   tags:
   - HandTag
   - Body
+  - Grass
+  - Stone
+  - Wood
   layers:
   - Default
   - TransparentFX
