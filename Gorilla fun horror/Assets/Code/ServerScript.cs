@@ -16,7 +16,7 @@ public class ServerScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.tag == "Player")
+        if (other.transform.tag == "HandTag")
         {
             if (joinRoom.name.Length < 12) 
             {

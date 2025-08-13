@@ -14,7 +14,7 @@ public class JoinRoom : MonoBehaviourPunCallbacks
     public bool pressed;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.tag == "Player")
+        if (other.transform.tag == "HandTag")
         {
             if (PhotonNetwork.InRoom)
             {
@@ -50,7 +50,7 @@ public class JoinRoom : MonoBehaviourPunCallbacks
         }
     }
 
-    void OnLeftRoom() //not sure if you meant "public override void OnLeftRoom()" but ok
+    public override void OnLeftRoom() //not sure if you meant "public override void OnLeftRoom()" but ok
     {
         string roomName = name;
         RoomOptions options = new RoomOptions();
